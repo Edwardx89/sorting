@@ -1,5 +1,5 @@
 describe('Bubble Sort', function(){
-  beforeEach(function () {
+  beforeEach(function() {
     spyOn(window, 'swap').and.callThrough();
   });
 
@@ -7,8 +7,8 @@ describe('Bubble Sort', function(){
     expect( bubbleSort([]) ).toEqual( [] );
     expect(window.swap.calls.count()).toEqual(0);
   });
-  it('handles an array of 1', function (){
-    expect( bubbleSort( [1] ).toEqual ([1]))
+   it('handles an array of 1', function (){
+    expect( bubbleSort([1]).toEqual ([1]))
     expect(window.swap.calls.count()).toEqual(0);
   });
   it('handles an array of elements', function (){
