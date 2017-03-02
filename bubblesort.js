@@ -1,5 +1,5 @@
 function swap(index1, index2, array){
-var greater = arr[index1];
+var greater = array[index1];
 array[index1] = array[index2];
 array[index2] = greater;
 };
