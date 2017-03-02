@@ -23,5 +23,9 @@ describe('Bubble Sort', function(){
     expect( bubbleSort([9,6,5,3,1])).toEqual( [1,3,5,6,9])
     expect(window.swap.calls.count()).toEqual(10);
   })
+  it('handles an array of negative numbers in elements', function (){
+    expect( bubbleSort([9,-6,5,-3,1])).toEqual( [-6,-3,1,5,9])
+    expect(window.swap.calls.count()).toEqual(6);
+  })
 });
 
