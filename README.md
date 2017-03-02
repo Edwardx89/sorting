@@ -1,2 +1,0 @@
-# sorting
-Fullstack sorting workshop
