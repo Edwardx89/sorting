@@ -22,3 +22,22 @@ describe('Merge Sort', function(){
     expect( mergeSort([9,-6,5,-3,1,2])).toEqual( [-6,-3,1,2,5,9])
   })
 });
+
+describe ('split', function(){
+  it('split the array into two', function(){
+    expect(split([4,6,1,8,5,2])).toEqual([[4,6,1],[8,5,2]])
+  });
+  it('split an even array into two', function(){
+    expect(split([9,3,7,1,8])).toEqual([[9,3],[7,1,8]])
+  })
+})
+
+describe ('merge A Sorted Array', function(){
+  it('merge two sorted arrays into one', function(){
+    expect(mergeASortedArray([1,2,3],[4,5,6])).toEqual([1,2,3,4,5,6]);
+  });
+  it('merge sorted array of uneven length', function(){
+    expect(mergeASortedArray([2,4,7],[3,5,8,9])).toEqual([2,3,4,5,7,8,9])
+  })
+})
+
